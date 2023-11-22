@@ -14,8 +14,9 @@ While acknowledging that comparisons between TensorFlow and PyTorch have been co
 - In our code, the testing component is executed locally. In brief, the testing phase involves evaluating the trained model on a separate dataset (in this case, the test set) to assess its performance on unseen data. 
 - There is no explicit database involved.
 - Given below is a diagram of one of the example neural networks we worked with, involving the Iris dataset. This multi-level perceptron gives a good general idea of the architecture of the networks we created. Of course, each node/neuron is connected to every other neuron in the previous and next layer. The connections have simply been omitted in the diagram for brevity.
-  
- ![image](https://github.com/thomas-sabu/POPL_G60/assets/93772844/30801d82-c77d-4fe2-9814-9f4d9c91f949)
+
+![image](https://github.com/thomas-sabu/POPL_G60/assets/91559478/1e96b14f-6304-4c5e-9502-b4dca4f93e56)
+
 
 
 
@@ -42,22 +43,23 @@ In our comprehensive discussion within the POPL_Aspects.ipynb file, we delved in
 - PyTorch Training loop took considerably lesser time than Tensorflow training loops.
 
 
-
- ![image](https://github.com/thomas-sabu/POPL_G60/assets/93772844/c6bf0f62-0291-424e-838b-5b50326bc9a0)
+![image](https://github.com/thomas-sabu/POPL_G60/assets/91559478/debdcc0f-87b1-4a8b-b7c1-8b5c700247dc)
 
 - TensorFlow training loop. (Eager Execution)
 The default runtime of Tensorflow uses eager execution, which runs the lines of code immediately rather than building a computation graph to be run all at once.
 
 
 
-![image](https://github.com/thomas-sabu/POPL_G60/assets/93772844/9b0a7210-1191-41b7-b2da-701005fa9363)
+![image](https://github.com/thomas-sabu/POPL_G60/assets/91559478/abc97959-b216-43ca-8b8c-eb011322a29e)
+
 
 - TensorFlow training loop (Lazy execution)
 This can be sped up by removing the model training logic into its own function and applying the @tf.function decorator, this allows the building of a computation graph that can be executed all at once resulting in massive speed gains.
 
 
 
-![image](https://github.com/thomas-sabu/POPL_G60/assets/93772844/ee7efc91-9db7-4544-b738-a553e0c818ba)
+![image](https://github.com/thomas-sabu/POPL_G60/assets/91559478/6475a693-359f-4421-8e5d-66067a8b3c87)
+
 
 
 
