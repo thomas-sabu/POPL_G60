@@ -71,5 +71,14 @@ This can be sped up by removing the model training logic into its own function a
 4.	Audio Data: For applications involving sound, speech recognition, or music analysis, incorporating audio data into the project would be beneficial. Evaluating the frameworks' performance in tasks like speech-to-text or sound classification can provide users with insights into their suitability for audio-related machine learning applications.
 
 
+Work Done by members:
+1) POPL_Aspects -> Aditya Chatterjee
+2) Model_types_building_training -> Thomas Sabu
+3) Common_Errors,Misunderstandings -> Yash Lothe
+4) Data_Types_and_data_handling -> Rohan Shroff
+
+
+
+
 
 
