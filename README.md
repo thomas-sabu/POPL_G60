@@ -73,6 +73,17 @@ This can be sped up by removing the model training logic into its own function a
 4.	Audio Data: For applications involving sound, speech recognition, or music analysis, incorporating audio data into the project would be beneficial. Evaluating the frameworks' performance in tasks like speech-to-text or sound classification can provide users with insights into their suitability for audio-related machine learning applications.
 
 
+
+**PyTorch vs TensorFlow - Conclusions**
+- Both TensorFlow and PyTorch offer useful abstractions that ease the development of models by reducing boilerplate code. They differ because PyTorch has a more "pythonic" approach and is object-oriented, while TensorFlow offers a variety of options.
+- PyTorch is used for many deep learning projects today, and its popularity is increasing among Al researchers, although of the three main frameworks, it is the least popular. Trends show that this may change soon.
+- When researchers want flexibility, debugging capabilities, and short training duration, they choose PyTorch. It runs on Linux, macoS, and Windows.
+- Thanks to its well-documented framework and abundance of trained models and tutorials, TensorFlow is the favorite tool of many industry professionals and researchers. TensorFlow offers better visualization, which allows developers to debug better and track the training process. PyTorch, however, provides only limited visualization.
+- TensorFlow also beats PyTorch in deploying trained models to production, thanks to the TensorFlow Serving framework. PyTorch offers no such framework, so developers need to use Django or Flask as a back-end server.
+- In the area of data parallelism, PyTorch gains optimal performance by relying on native support for asynchronous execution through Python. However, with TensorFlow, you must manually code and optimize every operation run on a specific device to allow distributed training. In summary, you can replicate everything from PyTorch in TensorFlow; you just need to work harder at it.
+- If you're just starting to explore deep learning, you should learn PyTorch first due to its popularity in the research community. However, if you're familiar with machine learning and deep learning and focused on getting a job in the industry as soon as possible, learn TensorFlow first.
+
+
 Work Done by members:
 1) POPL_Aspects -> Aditya Chatterjee
 2) Model_types_building_training -> Thomas Sabu
